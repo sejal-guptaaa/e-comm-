@@ -1,0 +1,51 @@
+#nav_logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+#main_cnt{
+    border: 2px solid;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+
+}
+
+.cnt{
+    height: 400px;
+    width: 30%;
+    border-radius: 25px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+}
+
+.img_cnt{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.btn_cnt{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}

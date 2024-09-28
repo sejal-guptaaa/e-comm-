@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="signupform">
+        <div class="uncnt">
+            <input type="text" id="username" placeholder="Enter username">
+            <p class="errUnMsg"></p>
+
+        </div>
+        <div class="pwdcnt">
+            <input type="password" id="pwd" placeholder="Enter password">
+            <p class="errorpwdMsg"></p>
+        </div>
+        <button>submit</button>
+    </form>
+    
+
+
+    <script>
+        let signForm= document.getElementById("signupform")
+        let userName= document.getElementById("username")
+        let errUnMsg=document.getElementById("errUnMsg")
+        let pwd=document.getElementById("pwd")
+        let errorpwdMsg=document.getElementById("errorpwdmsg")
+
+        let userdata={
+            un:"", pwd:""
+        }
+
+        signForm.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            let unInput=userName.value;
+            let password=pwd.value;
+            userData.un=unInput;
+            userData.pwd=password;
+            console.log(userData)
+
+        })
+        userName.addEventListener("blur",()=>{
+            if (userName.value=="") {
+                errUnMsg.textContent="Enter UserName"
+                errUnMsg.style.color="red"
+            } else {
+                errUnMsg.textContent=""
+            }
+        })
+        pwd.addEventListener("change",()=>{
+            if (pwd.value=="") {
+                errorpwdMsg.textContent="Enter password"
+                errorpwdMsg.style.color="green"
+            } else {
+                errorpwdMsg.textContent=""
+            }
+        })
+
+
+    </script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
